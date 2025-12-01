@@ -58,6 +58,7 @@ require("src/input_history")
 require("src/attack_data")
 require("src/frame_advantage")
 require("src/character_select")
+require("src/late_cancel_trainer")  -- Late Cancel Trainer Module
 
 recording_slot_count = 8
 
@@ -1638,6 +1639,9 @@ training_settings = {
   special_training_parry_air_on = true,
   special_training_parry_antiair_on = true,
   special_training_charge_overcharge_on = false,
+  
+  -- late cancel trainer
+  late_cancel_trainer_enabled = false,
 }
 
 debug_settings = {
@@ -1766,6 +1770,7 @@ main_menu = make_multitab_menu(
         mid_distance_height_item,
         p1_distances_reference_point_item,
         p2_distances_reference_point_item,
+        checkbox_menu_item("Late Cancel Trainer (Chun-Li)", training_settings, "late_cancel_trainer_enabled"),
       }
     },
     {
@@ -2447,6 +2452,12 @@ function before_frame()
     end
   end
 
+  -- Late Cancel Trainer Update
+  local _input = joypad.get(1)
+  if _input then
+    update_late_cancel_trainer(_input)
+  end
+
   log_update()
 end
 
@@ -2900,6 +2911,9 @@ function on_gui()
 
     menu_stack_draw()
   end
+
+  -- Late Cancel Trainer Display
+  draw_late_cancel_trainer()
 
   gui.box(0,0,0,0,0,0) -- if we don't draw something, what we drawed from last frame won't be cleared
 end
