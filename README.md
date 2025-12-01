@@ -100,11 +100,10 @@ config = {
 ## Tips for Practice
 
 1. **Start slow** - Focus on clean motion inputs first
-2. **Use the shortcut** - ↓↘→, ↓↘ + Kick is faster than full motion
-3. **Buffer the down** - Hold down while pressing MK
-4. **Piano for consistency** - Try MK → LK or LK → MK
+2. **Use the shortcut** - ↓↘→, ↓↘
+4. **Piano for consistency** 
 5. **Watch frame numbers** - Adjust timing based on feedback
-6. **Use Grouflon's features** - Set dummy to block/parry to practice confirms
+6. **Use Grouflon's features** - Set dummy to random block after you get comforable with the timing
 
 ---
 
