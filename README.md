@@ -21,7 +21,7 @@ This is a fork of [Grouflon's 3rd Strike Training Mode](https://github.com/Grouf
 - **And much more!**
 
 ### NEW: Late Cancel Timing Trainer ⭐
-- **Frame-Perfect Analysis** - Tracks timing for frames 22-24 late cancel window
+- **Frame-Perfect Analysis** - Tracks timing for frames 23-24 late cancel window
 - **Motion Detection** - QCF/QCB with SF3-accurate shortcuts
 - **Piano Support** - Tracks multiple kick presses
 - **Negative Edge** - Detects button releases
@@ -68,8 +68,8 @@ The late cancel trainer can be toggled on/off directly from the training menu:
 5. **Press P1 MK** to start a trial (simulates cr.MK)
 6. **Perform QCF, QCF + Kick**: ↓↘→, ↓↘→ + Kick
 7. **View feedback** on-screen:
-   - ✓✓ PERFECT! = Frames 22-24 ✅
-   - ✗ EARLY = Before frame 22
+   - ✓✓ PERFECT! = Frames 23-24 ✅
+   - ✗ EARLY = Before frame 23
    - ✗ LATE = After frame 24
 
 **Display Location:** Bottom-left corner (below Grouflon's UI)
